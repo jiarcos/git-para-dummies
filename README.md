@@ -11,13 +11,13 @@ Con git podemos entre otras cosas: tener un control de ediciones versionadas, re
 Primero debes descargar e instalar la versión de git para tu sistema operativo desde https://git-scm.com/downloads
 
 Para comprobar que la instalación fue realizada en la terminal de comandos escribes
-git --version, si fue instalado verás la versión de tu instalación de git.
+`git --versio`, si fue instalado verás la versión de tu instalación de git.
 
 ## Configuración básica
-Es importante configurar al menos un nombre de usuario y un correo electrónico, para ello escribes en la terminal git config --global user.name ‘tunombre’, pasando entre comillas tu nombre de usuario y git config --global user.email tuemail pasando sin comillas tu email.
+Es importante configurar al menos un nombre de usuario y un correo electrónico, para ello escribes en la terminal `git config --global user.name ‘tunombre’`, pasando entre comillas tu nombre de usuario y `git config --global user.email tuemai` pasando sin comillas tu email.
 
 ## Inicializar un repositorio
-Para que la carpeta de un proyecto en tu equipo pase a ser un repositorio de git debes inicializarla, en la terminal debes posicionarte en la carpeta del proyecto y escribir git init, esto creará una carpeta oculta de nombre .git la cual contiene toda la información del versionamiento.
+Para que la carpeta de un proyecto en tu equipo pase a ser un repositorio de git debes inicializarla, en la terminal debes posicionarte en la carpeta del proyecto y escribir `git init`, esto creará una carpeta oculta de nombre .git la cual contiene toda la información del versionamiento.
 
 A continuación se hace necesario comprender los estados de git en nuestro repositorio local y los comando necesarios para movernos entre ellos.
 
@@ -25,16 +25,16 @@ A continuación se hace necesario comprender los estados de git en nuestro repos
 En la imagen de referencia se describen tres estados: el working directory, este es el sistema de archivos en el cual trabajamos, el staging area, un área temporal en el que añadimos los archivos cuyos cambios estamos por enviar a git y el repository, donde se versiona nuestro trabajo.
 
 ## Añadir archivos, status y commit
-Para añadir cambios al staging area, lo haces con git add . para incluir los cambios realizados en todos tus archivos y git add archivo.txt si lo que quieres es incluir los cambios de un archivo en particular.
+Para añadir cambios al staging area, lo haces con`git add .` para incluir los cambios realizados en todos tus archivos y `git add archivo.txt` si lo que quieres es incluir los cambios de un archivo en particular.
 
-Para comprobar el estado de los archivos escribimos git status, de esta forma sabrás cuales están en el staging area listo para ser enviados al repositorio.
+Para comprobar el estado de los archivos escribimos `git status`, de esta forma sabrás cuales están en el staging area listo para ser enviados al repositorio.
 
-Para añadir los cambios que están en espera al repositorio escribes git commit -m ‘Mensaje que explique la función del commit’, con el flag -m pasa un mensaje entre comillas que entregue detalles del cambio añadido, el commit crea puntos de control en la línea de tiempo de tu repositorio.
+Para añadir los cambios que están en espera al repositorio escribes `git commit -m ‘Mensaje que explique la función del commit’`, con el flag -m pasa un mensaje entre comillas que entregue detalles del cambio añadido, el commit crea puntos de control en la línea de tiempo de tu repositorio.
 
-Para utilizar un solo comado y realizar el git add + git commit puedes utilizar el flag -a, de la siguiente manera git commit -a -m ‘Mensaje que explique la función del commit’.
+Para utilizar un solo comado y realizar el git add + git commit puedes utilizar el flag -a, de la siguiente manera `git commit -a -m ‘Mensaje que explique la función del commit’`.
 
 Si agregaste algún cambio al staging area pero quieres quitarlo de ahí puedes escribir 
-git reset HEAD archivo.txt
+`git reset HEAD archivo.txt`
 
 ## Ignorar y borrar archivos
 En cada proyecto hay archivos que no deseas versionar ya sea por su peso o su formato, para esto es que git te permite crear el archivo .gitignore dentro del cual debes detallar las carpetas o archivos que serán ignorados. A continuación un ejemplo.
