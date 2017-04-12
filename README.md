@@ -2,6 +2,7 @@
 
 ## ¿Que es git?
 
+{:.center}
 ![](img/git-github.jpg)
 Es importante dejar claro que git no es lo mismo que GitHub, git es un sistema de control de versiones Open Source creado en el año 2005 por Linus Torvalds, el creador de Linux, por otro lado GitHub es un servicio de alojamiento para proyectos versionados con git, de esta forma podemos tener una copia local y una remota de nuestros repositorios.
 
@@ -20,6 +21,8 @@ Es importante configurar al menos un nombre de usuario y un correo electrónico,
 Para que la carpeta de un proyecto en tu equipo pase a ser un repositorio de git debes inicializarla, en la terminal debes posicionarte en la carpeta del proyecto y escribir git init, esto creará una carpeta oculta de nombre .git la cual contiene toda la información del versionamiento.
 
 A continuación se hace necesario comprender los estados de git en nuestro repositorio local y los comando necesarios para movernos entre ellos.
+
+{:.center}
 ![](img/flujo.jpg)
 En la imagen de referencia se describen tres estados: el working directory, este es el sistema de archivos en el cual trabajamos, el staging area, un área temporal en el que añadimos los archivos cuyos cambios estamos por enviar a git y el repository, donde se versiona nuestro trabajo.
 
@@ -37,6 +40,8 @@ git reset HEAD archivo.txt
 
 ## Ignorar y borrar archivos
 En cada proyecto hay archivos que no deseas versionar ya sea por su peso o su formato, para esto es que git te permite crear el archivo .gitignore dentro del cual debes detallar las carpetas o archivos que serán ignorados. A continuación un ejemplo.
+
+{:.center}
 ![](img/gitignore.jpg)
 Para borrar los cambio realizados en un archivo, en otras palabras regresar a su última versión guardada o si borraste por error un archivos que ya había sido enviado en un commit antes y quieres restaurarlo debes escribir en la línea de comandos git checkout archivo.txt, entonces git lo regresará a su última versión.
 
@@ -96,3 +101,7 @@ Git: Subir un proyecto a Github
 https://www.youtube.com/watch?v=RRegIKu-z3k
 Curso gratis Devcode git y github
 https://devcode.la/cursos/git/
+
+.center {
+  text-align: center;
+}
