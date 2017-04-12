@@ -2,7 +2,7 @@
 
 ## ¿Que es git?
 
-<div style="display:flex; justify-content: center;"><img src ="img/git-github.jpg"/></div>
+<p align="center"><img src ="img/git-github.jpg" width="450"/></p>
 Es importante dejar claro que git no es lo mismo que GitHub, git es un sistema de control de versiones Open Source creado en el año 2005 por Linus Torvalds, el creador de Linux, por otro lado GitHub es un servicio de alojamiento para proyectos versionados con git, de esta forma podemos tener una copia local y una remota de nuestros repositorios.
 
 Con git podemos entre otras cosas: tener un control de ediciones versionadas, regresar a versiones anteriores de nuestros proyectos, revisar el registro de cambios y crear ramas experimentales o mejoras paralelas al proyecto troncal.
@@ -21,7 +21,7 @@ Para que la carpeta de un proyecto en tu equipo pase a ser un repositorio de git
 
 A continuación se hace necesario comprender los estados de git en nuestro repositorio local y los comando necesarios para movernos entre ellos.
 
-<div style="display:flex; justify-content: center;"><img src ="img/flujo.jpg"/></div>
+<p align="center"><img src ="img/flujo.jpg" width="350"/></p>
 En la imagen de referencia se describen tres estados: el working directory, este es el sistema de archivos en el cual trabajamos, el staging area, un área temporal en el que añadimos los archivos cuyos cambios estamos por enviar a git y el repository, donde se versiona nuestro trabajo.
 
 ## Añadir archivos, status y commit
@@ -39,7 +39,7 @@ git reset HEAD archivo.txt
 ## Ignorar y borrar archivos
 En cada proyecto hay archivos que no deseas versionar ya sea por su peso o su formato, para esto es que git te permite crear el archivo .gitignore dentro del cual debes detallar las carpetas o archivos que serán ignorados. A continuación un ejemplo.
 
-<div style="display:flex; justify-content: center;"><img src ="img/gitignore.jpg"/></div>
+<p align="center"><img src ="img/gitignore.jpg" width="350"/></p>
 Para borrar los cambio realizados en un archivo, en otras palabras regresar a su última versión guardada o si borraste por error un archivos que ya había sido enviado en un commit antes y quieres restaurarlo debes escribir en la línea de comandos git checkout archivo.txt, entonces git lo regresará a su última versión.
 
 Si lo que quieres es borrar un archivo del repositorio debes ejecutar el comando git rm archivo.txt, en el próximo commit el archivo será removido. 
