@@ -90,11 +90,13 @@ Por último ya que alguien más del equipo de desarrollo pudo haber subido algú
 | ls (unix) - dir (windows)| listar archivos del directorio                             |
 | cd ..                    | sube un directorio                                         |
 
-Git - la guía sencilla
-http://rogerdudler.github.io/git-guide/index.es.html
-Te enseño git en 30 minutos
-https://www.youtube.com/watch?v=QGKTdL7GG24
-Git: Subir un proyecto a Github
-https://www.youtube.com/watch?v=RRegIKu-z3k
-Curso gratis Devcode git y github
-https://devcode.la/cursos/git/
+### Fuentes
+  
+* Git - la guía sencilla
+    http://rogerdudler.github.io/git-guide/index.es.html
+* Te enseño git en 30 minutos
+    https://www.youtube.com/watch?v=QGKTdL7GG24
+* Git: Subir un proyecto a Github
+    https://www.youtube.com/watch?v=RRegIKu-z3k
+* Curso gratis Devcode git y github
+    https://devcode.la/cursos/git/
