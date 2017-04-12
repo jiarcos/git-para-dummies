@@ -1,6 +1,6 @@
 # git para dummies_
 
-## 1.¿Que es git?
+## 1.¿Qué es git?
 
 <p align="center"><img src ="img/git-github.jpg" width="450"/></p>
 
