@@ -12,10 +12,10 @@ Con git podemos entre otras cosas: tener un control de ediciones versionadas, re
 Primero debes descargar e instalar la versión de git para tu sistema operativo desde https://git-scm.com/downloads
 
 Para comprobar que la instalación fue realizada en la terminal de comandos escribes
-`git --versio`, si fue instalado verás la versión de tu instalación de git.
+`git --version`, si fue instalado verás la versión de tu instalación de git.
 
 ## 3.Configuración básica
-Es importante configurar al menos un nombre de usuario y un correo electrónico, para ello escribes en la terminal `git config --global user.name ‘tunombre’`, pasando entre comillas tu nombre de usuario y `git config --global user.email tuemai` pasando sin comillas tu email.
+Es importante configurar al menos un nombre de usuario y un correo electrónico, para ello escribes en la terminal `git config --global user.name ‘tunombre’`, pasando entre comillas tu nombre de usuario y `git config --global user.email tuemail` pasando sin comillas tu email.
 
 ## 4.Inicializar un repositorio
 Para que la carpeta de un proyecto en tu equipo pase a ser un repositorio de git debes inicializarla, en la terminal debes posicionarte en la carpeta del proyecto y escribir `git init`, esto creará una carpeta oculta de nombre .git la cual contiene toda la información del versionamiento.
