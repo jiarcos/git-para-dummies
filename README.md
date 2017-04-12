@@ -80,7 +80,7 @@ Por último ya que alguien más del equipo de desarrollo pudo haber subido algú
 
 ## Resumen comandos consola
 
-|comando                   | función                                                     |
+|comando                   | función                                                    |
 |--------------------------|------------------------------------------------------------|
 | pwd (unix) - cd (windows)| muestra el directorio actual                               |
 | cd  + directorio         | cambio de directorio                                       |
