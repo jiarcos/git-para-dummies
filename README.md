@@ -48,13 +48,15 @@ Para borrar los cambio realizados en un archivo, en otras palabras regresar a su
 Si lo que quieres es borrar un archivo del repositorio debes ejecutar el comando `git rm archivo.txt`, en el próximo commit el archivo será removido. 
 
 ## 7.Usando ramas
-Con el comando `git log` puedes ver el historial de commits enviados al repositorio con los datos del usuario que los realizó, un ID único y el comentario de referencia que explica su función. Silo que deseas es retroceder hasta una versión ‘x’, solo debes escribir en la terminal el siguiente comando `git checkout IdCommit` más los primeros 7 caracteres del ID proporcionado en el log. Para crear una rama de desarrollo desde ese punto o desde donde te encuentras debes ejecutar `git checkout -b NombreRama`
+Con el comando `git log` puedes ver el historial de commits enviados al repositorio con los datos del usuario que los realizó, un ID único y el comentario de referencia que explica su función. Si lo que deseas es retroceder hasta una versión ‘x’, solo debes escribir en la terminal el siguiente comando `git checkout IdCommit` donde IdCommit son los primeros 7 caracteres del ID proporcionado en el log. Para crear una rama de desarrollo desde ese punto o desde donde te encuentras debes ejecutar `git checkout -b NombreRama`
 
 Ahora te encuentras en otra rama, puedes crear cuantas quieras y pasa saber sus nombre y navegar luego entre ellas es que puedes ejecutar `git branch`
 
 Es importante mencionar que la rama troncal tiene por nombre master. Si lo que necesitas es regresar de una rama a master o simplemente moverte de una rama a otra ejecutas `git checkout NombreRama`
 
-En el caso de querer borrar una rama, ejecutas `git branch -D` forzando el borrado de una rama sin haber ejecutado antes un merge. Para fusionar dos ramas o hacer un merge, debes estar sobre la rama que quieres que permanezca (casi siempre master) y ejecutas el comando `git merge NombreRama` y el nombre de la rama que queremos integrar. Luego podemos borrar la rama ejecutando `git branch -d`
+Para subir tu rama local al repositorio remoto (en el cual la rama no esta creada), ejecutas `git push origin NombreRama`, este comando se utiliza con más frecuencia para subir los cambios realizados en el repositorio local, luego darles commit, hacia el repositorio remoto. Para traer los cambios que otro integrante del equipo subió en una rama a tu repositorio local ejecutas `git pull origin NombreRama`, puedes traer cambios tu misma rama en su version remota o de otra rama con la cual quieras actualizar la tuya.
+
+En el caso de querer borrar una rama, ejecutas `git branch -D NombreRama` forzando el borrado de una rama sin haber ejecutado antes un merge. Para fusionar dos ramas o hacer un merge, debes estar sobre la rama que quieres que permanezca (ej: hacer un merge de un feature a la rama develop) y ejecutas el comando `git merge NombreRama` donde NombreRama el nombre de la rama que queremos integrar. Luego podemos si lo deseas, puedes borrar la rama ejecutando `git branch -d NombreRama`
 
 ## 8.Repositorio remoto
 GitHub es una de la posibilidades que tienes para crear tu repositorio de forma remota. Para ello debes crear un repositorio, darle un nombre y si quieres escribes una descripción. El comando que te permite asociar tu repositorio local (previamente inicializado) con el remoto es: 
